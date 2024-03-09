@@ -37,23 +37,33 @@ const sumOfIndeces = (arrayOfIndeces: number[] | number[][]): number => {
  */
 function pairwise(arr: number[], arg: number): number {
     const inputArray: number[] = arr.slice(); // copies the input array: arr.
-    const indexes: number[][] = [];
+    const indexes: number[][] = []; //stores the array of indices that equals to arg.
     
+    /**
+     * Nested loop that iterates through the inputArray twice.
+     * Feeds each element pairs to the findPairs function which adds them then returns the indices of the pair of elements that equals to arg.
+     */
     for(let i = 0; i < inputArray.length; i++) {
         let current = inputArray[i]; //selects the current array elements
         for(let j = 0; j < inputArray.length; j++) {
             let indices = findPairs([current, inputArray[j]],[i, j], arg);
             if(indices.length !== 0) {
+                
+                //checks if the indexes array is not empty, then checks if the indexes array already has the current pair of indices. 
                 if(indexes.length !== 0 && indexes.flat().includes(indices[0]) || indexes.flat().includes(indices[1])) {
                     //no action
                 } else {
+                    // if the pair of indices is not found in the indexes array, it pushes in into indexes array. 
                     indexes.push([...indices]);
                 }
             }
         }
     }
 
+    // To get the sum of all the indices that equals to arg and assigns it ot the sum variable.
     const sum = sumOfIndeces(indexes);
+
+    //returns the sum of the indices.
     return sum;
 }
 
