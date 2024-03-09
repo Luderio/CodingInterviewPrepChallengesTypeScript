@@ -1,4 +1,4 @@
-Pairwise
+# Pairwise
 
 Given an array arr, find element pairs whose sum equal the second argument arg and return the sum of their indices.
 
@@ -15,7 +15,7 @@ Below we'll take their corresponding indices and add them.
 9 + 11 = 20 → Indices 1 + 2 = 3
 3 + 3 = 6 → Return 6
 
-TESTS:
+## TESTS:
 
 1. pairwise([1, 4, 2, 3, 0, 5], 7) should return 11.
 2. pairwise([1, 3, 2, 4], 4) should return 1.

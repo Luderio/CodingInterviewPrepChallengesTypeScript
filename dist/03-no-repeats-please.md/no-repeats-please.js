@@ -1,19 +1,9 @@
 "use strict";
-/**
- * A function that will switch the array elements on the given indeces.
- * @param {string[]} input An array of string to be switched.
- * @param {number} index1  A number which is the index position of the array of element to be switched.
- * @param {number} index2  A number which is the index position of the array of element to be switched.
- * @returns {void} Doesn't return anything. just switches the array elements based on the index positions (index1 and index2)
- */
+//will switch the array elements on the given indeces.
 function switcher(input, index1, index2) {
     [input[index1], input[index2]] = [input[index2], input[index1]];
 }
-/**
- * A function that will check if the permuted elements has the same consecutive elements and returns true if yes, false if no.
- * @param {string[]} input  An array of string.
- * @returns {boolean} Returns true if the input array elements has 2 consecutive letters, false otherwise.
- */
+//will check if the permuted elements has the same consecutive elements and returns true if yes, false if no.
 function consecutiveChecker(input) {
     let hasConsecutive = [];
     for (let i = 0; i < input.length; i++) {
@@ -31,11 +21,6 @@ function consecutiveChecker(input) {
         return false;
     }
 }
-/**
- * A function that will generate the permutation of the input string then returns the number of permutation without consecutive letter.
- * @param {string} input
- * @returns {number} Returns the number of the permutation without the consecutive letter.
- */
 function permAlone(input) {
     //Split the input string into an array using the .split() method.
     const inputArray = input.split("");
