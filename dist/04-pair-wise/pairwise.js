@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * A function adding 2 array elements, their index positions and the argument number in which the sum of 2 array elements should be equal to.
  * @param {number[]} inputArray an array of 2 number elements to be added.

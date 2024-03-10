@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const sym = (array1, array2, ...inputArray) => {
     let result = [];
     //function to handle binary array operation/comparison

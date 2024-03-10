@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 /**
  * A function that will switch the array elements on the given indeces.
  * @param {string[]} input An array of string to be switched.

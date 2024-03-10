@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const updateInventory = (current_inventory, new_inventory) => {
     const inventory = [...current_inventory];
     const new_items = [...new_inventory];
