@@ -31,7 +31,6 @@ function bubbleSort(array: number[]): number[] {
             }
         }
     }
-    console.log(inputArray)
     return inputArray;
   }
 

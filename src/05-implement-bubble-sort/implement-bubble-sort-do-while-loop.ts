@@ -33,7 +33,6 @@ function bubbleSort(array: number[]): number[] {
     }
 
     while(swapped);
-
     return inputArray;
   }
 
