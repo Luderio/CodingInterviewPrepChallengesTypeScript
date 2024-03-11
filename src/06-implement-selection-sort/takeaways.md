@@ -6,7 +6,7 @@
 
 This is a bit confusing for me 😅
 
-Just as I thought that I can do this easily because I solved the ***Bubble Sort*** challenge, Boy, I've never been more wrong. 🤣
+Just as I thought that I can do this easily because I solved the ***Bubble Sort*** challenge in just an hour, Boy, I've never been more wrong. 🤣
 
 What I did wrong is not tracking the minimum value's index and compare the next element to it during the iterations hence I wasted a lot of time trying to figure out why the result is returning in decending order. 
 
